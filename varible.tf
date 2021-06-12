@@ -1,17 +1,4 @@
-[8:03:54_pm] [$$ enctrypted $$]
-[8:03:53_pm] [$$ enctrypted $$]
-[8:03:53_pm] [$$ enctrypted $$]
-[8:03:53_pm] [$$ enctrypted $$]
-[8:03:52_pm] [$$ enctrypted $$]
-[8:03:52_pm] [$$ enctrypted $$]
-[8:03:52_pm] [$$ enctrypted $$]
-[8:03:51_pm] [$$ enctrypted $$]
-[8:03:39_pm] [$$ enctrypted $$]
-[8:03:39_pm] [$$ enctrypted $$]
-[8:03:38_pm] [$$ enctrypted $$]
-[8:03:38_pm] [$$ enctrypted $$]
-[8:03:38_pm] [$$ enctrypted $$]
-
+module "my_vpc" {
 variable "aws_region" {
 	default = "us-east-1"
 }

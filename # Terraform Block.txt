@@ -1,0 +1,34 @@
+# Terraform Block
+terraform {
+    required_version = "~> 0.15.3"
+    required_providers {
+        aws = {
+            source = "hashicorp/aws"
+            version = "~> 3.0"
+        }
+    }
+
+}
+
+
+#provider Block provider -1 default provider
+Provider "aws"{
+    region = "us-east-1"
+    profile = "default"
+
+}
+#provider block provider -2 for us-west-1
+provider "aws" {
+    region = "us-west-1"
+    profile = "default"
+    alias = "aws-west-1"
+}
+
+resource "aws_vpc" "main" {
+  cidr_block       = "10.0.0.0/16"
+  instance_tenancy = "default"
+
+  tags = {
+    Name = "main"
+  }
+}
