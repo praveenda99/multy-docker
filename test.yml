@@ -1,0 +1,16 @@
+name:Ali
+age:28
+address: "dhone"
+active: true
+key:
+ key: value
+ key2: 33
+ key3:
+   key: value
+   key2: value
+jsonobject:{key: value, key2: 33, key3:{key: value, key2: value }}   
+array:
+  - item1
+  - item2
+  - {key: value }
+jsonarray: [item1, item2]  
